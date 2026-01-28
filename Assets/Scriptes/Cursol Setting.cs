@@ -17,20 +17,17 @@ public class CursorChange : MonoBehaviour
 
     void OnMouseOver()
     {
-        //Cursor.SetCursor(loupeCursor, Vector2.zero, CursorMode.Auto);
-        sr.color = Color.black;   // 赤色に変更する処理
+        sr.color = Color.black;   // 的を黒色に変更する処理
     }
     void OnMouseDown() 
     {
-        Destroy(this.gameObject);
-        scoreManager.AddScore(target.Score);
+        Destroy(this.gameObject);  // 的を消す
+        scoreManager.AddScore(target.Score);  // スコアの加算
     }
 
     void OnMouseExit()
     {
-        // nullにするとデフォルトのテクスチャに戻る
-        //Cursor.SetCursor(defaultCursor, Vector2.zero, CursorMode.Auto);
-        sr.color = Color.white;
+        sr.color = Color.white;  // 的を元に戻す処理
     }
     
 }

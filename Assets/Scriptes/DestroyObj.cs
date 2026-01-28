@@ -6,7 +6,7 @@ public class DestroyObj : MonoBehaviour
 
     void Start()
     {
-        Destroy(gameObject, target.DeleteTime);
+        Destroy(gameObject, target.DeleteTime);  // 時間がたったらオブジェクトを消す
     }
 
 }

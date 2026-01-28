@@ -25,7 +25,7 @@ public class RandomCreate : MonoBehaviour
             // プレハブを生成
             Instantiate(randomObj.Texture, pos, Quaternion.identity);
 
-            timer = 0f;
+            timer = 0f;  // タイマーをリセット 
         }    
     }
 }

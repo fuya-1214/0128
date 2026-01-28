@@ -16,6 +16,6 @@ public class ScoreManager : MonoBehaviour
 
     public void AddScore(int point)
     {
-        score += point;
+        score += point;   // スコアを加算
     }
 }

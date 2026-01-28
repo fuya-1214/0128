@@ -31,20 +31,20 @@ public class CountDown : MonoBehaviour
 
         if(count > 1)
         {
-            count -= Time.deltaTime;
+            count -= Time.deltaTime;  // カウント下げる
             label.text = count.ToString("F0");
         }
         else if(count == 0)
         {
-            label.text = "State";
+            label.text = "State"; // 0になる代わりにStateを表示
         }
         else
         {
-            yield return new WaitForSeconds(1);
-            label.text = "";
-            gameManager.enabled = true;
+            yield return new WaitForSeconds(1); //start後1フレームおいてゲームスタート
+            label.text = "";   // 何も表示しなくする
+            gameManager.enabled = true; 
             ui.enabled = true;
-            
+            Destroy(this.gameObject); // 役目を終えたので消す
         }
     }
 
