@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c49df58891a2d147b05a7c4ec5b291a, type: 3}
+  m_Name: 10
+  m_EditorClassIdentifier: Assembly-CSharp::Target
+  score: 10
+  texture: {fileID: 7765190756800580496, guid: ef68868998d4cf54cb0ac3584c463af2, type: 3}
+  deleteTime: 1.5
